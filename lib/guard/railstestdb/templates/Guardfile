@@ -1,3 +1,6 @@
+guard 'railstestdb' do
+  # This is just here so "guard init railstestdb" won't duplicate the real code below if run multiple times.
+end
 guard 'rake', :task => 'db:test:prepare_safely' do
   watch(%r{^db/schema.rb})
 end
